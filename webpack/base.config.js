@@ -46,7 +46,8 @@ const baseConfig = (params) => ({
         cache: true,
         parallel: true
       })
-    ]
+    ],
+    ...params.optimization
   },
   performance: {
     hints: false

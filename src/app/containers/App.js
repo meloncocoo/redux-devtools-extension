@@ -25,6 +25,7 @@ import RightIcon from 'react-icons/lib/md/border-right';
 import BottomIcon from 'react-icons/lib/md/border-bottom';
 import RemoteIcon from 'react-icons/lib/go/radio-tower';
 import PersistIcon from 'react-icons/lib/go/pin';
+import Status from '../components/Status';
 
 @enhance
 class App extends Component {
@@ -78,6 +79,7 @@ class App extends Component {
             fillColor="rgb(120, 144, 156)"
           />
         }
+        <Status />
         {dispatcherIsOpen && options.connectionId && options.features.dispatch &&
           <Dispatcher options={options} />
         }

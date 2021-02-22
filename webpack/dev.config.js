@@ -12,7 +12,10 @@ let config = baseConfig({
   },
   plugins: [
     new webpack.NoEmitOnErrorsPlugin()
-  ]
+  ],
+  optimization: {
+    minimize: false,
+  }
 });
 
 config.watch = true;
