@@ -13,3 +13,9 @@ if (process.env.NODE_ENV === 'production') {
   };
   (document.head || document.documentElement).appendChild(s);
 }
+// (function() {
+//   window.addEventListener('load', function() {
+//     window.start = start;
+//     console.log(window);
+//   }, false);
+// })();

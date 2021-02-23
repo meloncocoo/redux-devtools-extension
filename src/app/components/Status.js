@@ -45,7 +45,7 @@ class Status extends Component {
       system: {
         webBidDialogCount = 0
       } = {}
-    } = computedStates[computedStates.length - 1].state;
+    } = computedStates[computedStates.length - 1] ? computedStates[computedStates.length - 1].state : {};
 
     const curPrice = parseInt(priceUpper, 0);
     // { type: 'bidBase/initBidding', payload: 87900 }
@@ -64,7 +64,7 @@ class Status extends Component {
         priceUpper = 0,
         sysTime
       } = {}
-    } = {}} = computedStates[computedStates.length - 1].state;
+    } = {}} = computedStates[computedStates.length - 1] ? computedStates[computedStates.length - 1].state : {};
 
     console.log(computedStates);
 

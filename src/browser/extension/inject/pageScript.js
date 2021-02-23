@@ -398,3 +398,18 @@ window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ = (...funcs) => {
   }
   return extensionCompose({})(...funcs);
 };
+
+window.bid = (sTime) => {
+  let i = setInterval(() => {
+    let btn = $('.whpdConfirm')[0];
+    let time = $('.detail-proinfo span.red')[0] && $('.detail-proinfo span.red')[0].innerText;
+    if (btn && time >= sTime) {
+      btn.click();
+      clearInterval(i);
+    }
+  }, 50);
+
+  console.log('bid injected');
+
+  return i;
+};
