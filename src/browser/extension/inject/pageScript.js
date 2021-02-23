@@ -409,7 +409,5 @@ window.bid = (sTime) => {
     }
   }, 50);
 
-  console.log('bid injected');
-
   return i;
 };

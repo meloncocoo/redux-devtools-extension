@@ -16,7 +16,7 @@ class Status extends Component {
     };
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps() {
     this.handlePrice();
   }
 
@@ -65,8 +65,6 @@ class Status extends Component {
         sysTime
       } = {}
     } = {}} = computedStates[computedStates.length - 1] ? computedStates[computedStates.length - 1].state : {};
-
-    console.log(computedStates);
 
     return (
       <div
